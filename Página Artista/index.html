@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artista Favorito</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="recursos/logo.png">
+</head>
+<body>
+
+    <header>
+        <img src="recursos/logo.png" alt="Logo del sitio" class="logo">
+        <h1>Rauw Alejandro</h1>
+        <button id="toggleDarkMode">Cambiar Modo</button>
+    </header>
+
+
+    <main>
+        <section class="discografia">
+            <h2>Discografía</h2>
+            <nav>
+                <button id="viceversa">VICE VERSA (2021)</button>
+                <button id="afrodisiaco">Afrodisíaco (2022)</button>
+                <button id="playasaturno">Playa Saturno (2023)</button>
+            </nav>
+
+            <div id="contentContainer">
+                
+            </div>
+        </section>
+
+        <section class="canciones-famosas">
+            <h2>Canciones Famosas</h2>
+            <ul>
+                <li>Diluvio - Playa Saturno</li> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2kz1YOhJiNubjigR1gB1VX?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <li>Lokera - Lokera Single</li> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1aUq8rjW1EwkAkMri4VfJy?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <li>Cúrame - VICE VERSA</li> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1FlL8ycld6uVDDyhV7P5FA?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </ul>
+        </section>
+
+        <section id="lyrics">
+            <h2>Consulta Letras de Canciones</h2>
+            <input type="text" id="songInput" placeholder="Nombre de la canción">
+            <button onclick="fetchLyrics()">Buscar Letra</button>
+            <div id="songLyrics"></div>
+          </section>
+
+
+
+        <section class="cancion-preferida">
+
+            <h2>Dejame Entrar - Cosa Nuestra</h2>
+            <iframe class="cancion" width="560" height="315" src="recursos/cancion.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Dejame entrar es una canción que forma parte de un album en espera que se llama "Cosa Nuestra", es una canción que demuestra una fase cercana a lo que es Rauw Alejandro en sí mismo, es una canción que incorpora por primera vez (al menos de forma clara)
+                un nuevo recurso, que es el afrobeat, la forma en que está dirigido el videoclip es muy detallada, la edición y coreografia. Es mi favorita porque cuando escuchas esa canción
+                no hay manera de que te quedes quieto, termina siendo un viaje que al final incorpora elementos del reggaeton, algo que uno no esperaría y eso es lo que le da frescura y sea
+                una canción tan pegadiza y no por lo comercial, sino a nivel producción en general. 
+                Rauw me parece uno de los artistas latinoamericanos más completos de la industria, por eso este ultimo lanzamiento considero que merece mucho más reconocimiento y es de mis favoritos.
+            </p><br>
+            <p>ATENTOS QUE SALIÓ EL NUEVO ALBUM DE RAUW!!!!!! VAYAN A VERLO YA MISMO EN EL CANAL OFICIAL DE YOUTUBE</p>
+        </section>
+        
+    </main>
+
+
+
+    <footer>
+        <p>Social Media</p>
+        <a href="https://www.instagram.com/rauwalejandro/?hl=es-la" target="_blank">Instagram</a> |
+        <a href="https://x.com/rauwalejandro?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a> |
+        <a href="https://www.youtube.com/channel/UC_Av98lDjf5KvFib5elhpYg" target="_blank">YouTube</a>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
